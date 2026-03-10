@@ -1,0 +1,13 @@
+.App-Header {
+    background-color: #235ac7;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.App-Header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
