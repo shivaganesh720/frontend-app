@@ -34,7 +34,7 @@ function Content() {
             <div className="row"> <ol>
                 {products.map((product) => (
                     <div className="box">
-                        <img src={`${API_URL}/${product.image}`} alt={product.name} />
+                        <img src={`${API_URL}/${product.image}`} width="300px" alt={product.name} />
                         <h3>Product Name: {product.name}</h3>
                         <p>Description: {product.desc}</p>
                         <h4>Price: ${product.price}</h4>
