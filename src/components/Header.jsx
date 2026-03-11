@@ -12,7 +12,6 @@ function Header() {
                 <li><Link to="/logout">Logout</Link></li>
             </ul>
         </div>
-    );
+    )
 }
-import { Link } from "react-router-dom";
 export default Header;
