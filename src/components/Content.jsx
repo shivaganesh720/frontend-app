@@ -29,7 +29,7 @@ function Content() {
             <h3>Products Page</h3>
             <button onClick={decrement}>-</button>
             {count}
-            <button onClick={increment}>+</button>
+            <button onClick={increment}>+</button><br />
             <hr />
             <div className="row"> <ol>
                 {products.map((product) => (
