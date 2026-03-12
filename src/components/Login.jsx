@@ -7,12 +7,18 @@ function Login() {
     const { user, setUser } = useContext(AppContext);
     const API_URL = import.meta.env.VITE_API_URL;
     const Navigate = useNavigate()
+
     const handleLogin = async () => {
-        const url = API_URL + "/auth/signin";
-        const response = await axios.post(url, user);
-        setUser(response.data);
-        Navigate("/")
+        try {
+            const url = API_URL + "/auth/signin";
+            const response = await axios.post(url, user);
+            setUser(response.data);
+            Navigate("/")
+        } catch (error) {
+            alert("User not found, please register!");
+        }
     };
+
     return (
         <div>
             <h2>Login Page</h2>
