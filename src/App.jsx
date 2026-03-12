@@ -8,12 +8,16 @@ import Register from "./components/Register";
 import Cart from "./components/Cart";
 import Orders from "./components/Orders";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 export const AppContext = createContext();
+
 function App() {
   const [user, setUser] = useState({});
+  const [cart, setCart] = useState([])
+
   return (
     <div>
-      <AppContext.Provider value={{ user, setUser }}>
+      <AppContext.Provider value={{ user, setUser, cart, setCart }}>
         <BrowserRouter>
           <Header />
           <Routes>
