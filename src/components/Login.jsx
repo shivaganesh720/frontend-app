@@ -9,14 +9,10 @@ function Login() {
     const Navigate = useNavigate()
 
     const handleLogin = async () => {
-        try {
-            const url = API_URL + "/auth/signin";
-            const response = await axios.post(url, user);
-            setUser(response.data);
-            Navigate("/")
-        } catch (error) {
-            alert("User not found, please register!");
-        }
+        const url = API_URL + "/auth/signin";
+        const response = await axios.post(url, user);
+        setUser(response.data);
+        Navigate("/")
     };
 
     return (
