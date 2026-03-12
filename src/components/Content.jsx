@@ -25,7 +25,7 @@ function Content() {
         fetchProducts();
     }, []);
     return (
-        <div>
+        <div className="content">
             <h3>Products Page</h3>
             <button onClick={decrement}>-</button>
             {count}
