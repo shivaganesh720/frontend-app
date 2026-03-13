@@ -34,7 +34,7 @@ function Content() {
                         <img src={`${API_URL}/${product.image}`} width="300px" alt="" />
                         <h3>{product.name}</h3>
                         <p>{product.desc}</p>
-                        <h4>{product.price}</h4>
+                        <h4>${product.price}</h4>
                         <p>
                             <button onClick={() => addToCart(product)}>Add to Cart</button>
                         </p>
