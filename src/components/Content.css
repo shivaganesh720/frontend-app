@@ -1,6 +1,5 @@
 .row {
     display: flex;
-    /* justify-content: center; */
     flex-wrap: wrap;
 
 }
@@ -16,7 +15,3 @@
 .content {
     padding-bottom: 10px;
 }
-
-/* .box img {
-    width: 100%;
-} */
