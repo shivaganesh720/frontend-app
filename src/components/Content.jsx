@@ -9,7 +9,7 @@ function Content() {
     const [count, setCount] = useState(0);
     const [products, setProducts] = useState([]);
 
-    const { cart, setCart } = useContext(AppContext);   
+    const { cart, setCart } = useContext(AppContext);   // ⭐ FIX
 
     const increment = () => {
         setCount(count + 1);
